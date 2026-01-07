@@ -1,0 +1,12 @@
+@if (label) {
+    <label class="form-field-label" [for]="_controlId">{{ label }}</label>
+}
+<div class="form-field-body">
+    <ng-content select="[appFieldInput]"></ng-content>
+</div>
+
+<div class="form-field-additional">
+    <ng-content></ng-content>
+
+    <ng-content select="app-form-field-errors"></ng-content>
+</div>
