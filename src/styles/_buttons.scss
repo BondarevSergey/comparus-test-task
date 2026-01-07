@@ -1,0 +1,46 @@
+@use 'mixins';
+
+%base-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--button-height);
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--font);
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+.btn {
+    @extend %base-button;
+    color: var(--button-text-default);
+    background: var(--button-bg-default);
+
+    &:disabled {
+        color: var(--button-text-disable);
+        background: var(--button-bg-disable);
+    }
+
+    @include mixins.hover {
+        color: var(--button-text-hover);
+        background: var(--button-bg-hover);
+    }
+
+    @include mixins.active {
+        color: var(--button-text-active);
+        background: var(--button-bg-active);
+    }
+}

@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/buttons' as *;
+
+:root {
+    --font: 'Inter', sans-serif;
+
+    //--------------  Font variables --------------
+    --general-font: #fff;
+
+    //-------------- Background variables --------------
+    --general-bg-dark: #191c25;
+
+    //--------------  Form elements ------
+    --form-input-text-placeholder: #232734;
+    --form-input-text-default: #b3bac8;
+    --form-input-text-disabled: #4b5369a3;
+    --form-input-text-error: #ff2a2a;
+
+    --form-input-bg-default: #12141a;
+    --form-input-bg-disabled: #4b53691a;
+
+    --form-input-border-default: #232734;
+    --form-input-border-disable: #232734;
+    --form-input-border-focused: #1e222d;
+    --form-input-border-error: #ff2a2a;
+
+    //--------------  Buttons ------
+    --button-height: 52px;
+
+    --button-bg-disable: #232734;
+    --button-bg-default: #593aa1;
+    --button-bg-hover: #462c82;
+    --button-bg-active: #6c4ac2;
+
+    --button-text-default: #f4f1fb;
+    --button-text-disable: #4b5369;
+    --button-text-hover: #f4f1fb;
+    --button-text-active: #f4f1fb;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    height: 100svh;
+    margin: 0;
+    color: var(--general-font);
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: var(--general-bg-dark);
+    z-index: 0;
+}
