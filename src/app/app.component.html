@@ -1,0 +1,21 @@
+<div class="game">
+    <div class="game__head">
+        <div><strong>Player score:</strong> {{ playerScore() }}</div>
+        <div><strong>Computer score:</strong> {{ computerScore() }}</div>
+    </div>
+
+    <div class="game__body">
+        @for (cell of cells(); track $index) {
+            <div class="game__cell" [style.background]="cell" (click)="userClickByCell($index)"></div>
+        }
+    </div>
+
+    <div class="game__footer">
+        <button class="btn" (click)="startGame()">START</button>
+    </div>
+
+    <app-form-field label="Time limit (sec)">
+        <input appFieldInput type="number" [formControl]="timeLimit" />
+        <app-form-field-errors [control]="timeLimit" />
+    </app-form-field>
+</div>

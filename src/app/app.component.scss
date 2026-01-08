@@ -1,0 +1,26 @@
+.game {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        display: grid;
+        grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+        gap: 10px;
+        width: 600px;
+        height: 600px;
+        margin-bottom: 20px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+}
