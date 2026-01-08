@@ -1,27 +1,28 @@
-# ComparusTestTask
+# Test task for Comp..... company
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+This project is the test task for Comp..... company for Angular Developer position.
+
+![demo.jpg](demo/demo.jpg)
+
+## Description of the task
+
+Create a simple mini-game in Angular where the player tries to click by active cell. A user gets one point if he clicks on a yellow cell. Computer gets point if user doesn't click on active cell. The game ends when the player or computer gets 10 points. Before start user can change time until a yellow cell appears.
+
+## Development information
+
+This project was by Angular (version 17.3.17). Recommended version of Node.js is ^18.13.0 (v22.14.0 was used by development).
+
+There were implemented Eslint, Prettier and Husky as basic tools setup for all my projects.
+
+## Starting
+
+You can clone the project by link: https://github.com/BondarevSergey/comparus-test-task.git
+After cloning run `npm install` to install all dependencies.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
