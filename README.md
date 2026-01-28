@@ -1,6 +1,6 @@
 # Test task for Comp..... company
 
-This project is the test task for Comp..... company for Angular Developer position.
+This project is the test task for a some company for Angular Developer position.
 
 ![demo.jpg](demo/demo.jpg)
 
@@ -16,7 +16,7 @@ There were implemented Eslint, Prettier and Husky as basic tools setup for all m
 
 ## Starting
 
-You can clone the project by link: https://github.com/BondarevSergey/comparus-test-task.git
+You can clone the project by link: https://github.com/BondarevSergey/reflex-clicker-angular.git
 After cloning run `npm install` to install all dependencies.
 
 ## Development server

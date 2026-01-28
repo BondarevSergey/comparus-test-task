@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "comparus-test-task": {
+        "reflex-clicker-angular": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/comparus-test-task",
+                        "outputPath": "dist/reflex-clicker-angular",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -58,10 +58,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "comparus-test-task:build:production"
+                            "buildTarget": "reflex-clicker-angular:build:production"
                         },
                         "development": {
-                            "buildTarget": "comparus-test-task:build:development"
+                            "buildTarget": "reflex-clicker-angular:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "buildTarget": "comparus-test-task:build"
+                        "buildTarget": "reflex-clicker-angular:build"
                     }
                 },
                 "test": {
@@ -80,7 +80,11 @@
                         "inlineStyleLanguage": "scss",
                         "assets": ["src/favicon.ico", "src/assets"],
                         "styles": ["src/styles.scss"],
-                        "scripts": []
+                        "scripts": [],
+                        "stylePreprocessorOptions": {
+                            "includePaths": ["src/styles", "src/styles/components"]
+                        },
+                        "codeCoverage": true
                     }
                 },
                 "lint": {
