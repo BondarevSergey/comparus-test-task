@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { ModalService } from '../../../services/modal.service';
-import { Winner } from '../../../models/game.model';
+import { GameResult } from '../../../models/game.model';
 
 @Component({
     selector: 'app-result-modal',
@@ -12,7 +12,7 @@ import { Winner } from '../../../models/game.model';
 export class ResultModalComponent {
     readonly _modalService = inject(ModalService);
 
-    public winner = input.required<Winner>();
+    public data = input<GameResult>();
 
     public close(result?: boolean) {
         this._modalService.close(result);

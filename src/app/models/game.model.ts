@@ -7,6 +7,10 @@ export enum CellState {
     BLUE = 'blue'
 }
 
+export interface GameResult {
+    winner: Winner;
+}
+
 export interface GameState {
     cells: CellState[];
     activeCellIndex: number | null;

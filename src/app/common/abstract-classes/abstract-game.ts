@@ -24,7 +24,7 @@ export abstract class AbstractGame {
      */
     protected async openModal(winner: Winner): Promise<void> {
         const { ResultModalComponent } = await import('../../common/components/result-modal/result-modal.component');
-        this._modalService.open(ResultModalComponent, winner, (result: boolean) => {
+        this._modalService.open(ResultModalComponent, { winner }).then((result: boolean) => {
             if (result) {
                 this.restartCallBack();
             }

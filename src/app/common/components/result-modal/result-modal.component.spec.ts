@@ -28,7 +28,7 @@ describe('Component: ResultModal', () => {
     beforeEach(() => {
         fixture = TestBed.createComponent(ResultModalComponent);
         component = fixture.componentInstance;
-        fixture.componentRef.setInput('winner', 'player');
+        fixture.componentRef.setInput('data', { winner: 'player' });
         fixture.detectChanges();
     });
 

@@ -51,10 +51,10 @@ export class SignalsGameComponent extends AbstractGame {
 
     /**
      * Action on user click by cell
-     * @param index iof clicked element
+     * @param index of clicked element
      */
     public userClickByCell(index: number): void {
-        if (!this.activeCellIndex() || this.activeCellIndex() !== index) {
+        if (this.activeCellIndex() === null || this.activeCellIndex() !== index) {
             return;
         }
 
