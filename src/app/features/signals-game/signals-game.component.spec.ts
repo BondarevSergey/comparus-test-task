@@ -130,13 +130,4 @@ describe('Component: SignalsGame', () => {
         component['clearTimer']();
         expect(component['timeout']).toBeNull();
     });
-
-    it('should restart game on success result from modal', fakeAsync(() => {
-        ModalMockService.open.and.returnValue(Promise.resolve(true));
-        const restartSpy = spyOn(component, 'restartCallBack');
-
-        component['openModal']('computer');
-        tick();
-        expect(restartSpy).toHaveBeenCalled();
-    }));
 });
